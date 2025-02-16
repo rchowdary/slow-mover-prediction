@@ -17,10 +17,27 @@ st.markdown("""
         width: 100%;
         margin-top: 20px;
     }
+    .title-container {
+        background-color: black;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+    }
+    .main-title {
+        text-align: center;
+        color: white;
+        font-size: 3em;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
     </style>
 """, unsafe_allow_html=True)
 
 def main():
+    # Add main title with container
+    st.markdown("<div class='title-container'><h1 class='main-title'>Codeworks ML</h1></div>", unsafe_allow_html=True)
+    
     st.title("🚛 Slow Mover Item Prediction")
     st.markdown("---")
     
